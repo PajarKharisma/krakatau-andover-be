@@ -1,0 +1,4 @@
+.venv
+/logs
+__pycache__/
+/public/img/*.png
