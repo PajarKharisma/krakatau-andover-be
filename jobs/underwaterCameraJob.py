@@ -20,7 +20,7 @@ class UnderwaterCameraThread(threading.Thread):
                 if context.VALUES['underwater_camera_connect']:
                     if self.cap is None:
                         try:
-                            self.cap = cv2.VideoCapture(0)
+                            self.cap = cv2.VideoCapture(1)
                             self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
                             self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 320)
                         except Exception as e:
